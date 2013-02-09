@@ -1,0 +1,100 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "TMXSUITE" "1" "February 2013" "" ""
+.
+.SH "NAME"
+\fBtmxsuite\fR \- import/export your tmx memories to a database friendly format and keep a track of previous imports
+.
+.SH "SYNOPSIS"
+\fIuse a different memory list, import using xpath two memories\fR
+.
+.P
+tmxsuite\.rb \-\-memorylist \'mymemorylist\.yaml\' import \-X \-f "mem1\.tmx" "mem2\.tmx" "mem3\.tmx" tmxsuite\.rb \-m
+.
+.P
+tmxsuite\.rb \-\-export \fIdirectory\fR
+.
+.br
+tmxsuite\.rb \-e
+.
+.P
+\fIimport a directory using SAX include some tags\fR
+.
+.P
+tmxsuite\.rb import \-f "memdir" \-\-tags MECHENG, DOCU
+.
+.P
+\fIimport files using SAX include some tags\fR
+.
+.P
+tmxsuite\.rb import \-\-tags MECHENG, DOCU \-f "mem1\.tmx" \-f "mem2\.tmx"
+.
+.SH "DESCRIPTION"
+\fBTMXSUITE\fR is a simple command line tool for importing tmx memory exchange files into a format suitable for import into a database (JSON) and for use by Ajax\.
+.
+.P
+\fBTMXSUITE\fR extracts source/target segment information from memories as well as some header information such as X,Y and Z, merges this information with import\-specific options such as domain tags for the memory (what categories it can be assigned to, e\.g\. Mechanical Engineering, Documentation)
+.
+.P
+The Tags are kept in a localized namespace\. E\.g\. if the source language of the memory is "DE", the tags will be assumed to beling to the "DE" language namespace\.
+.
+.P
+\fBTMXSUITE\fR keeps a track through a list of memories of each import and prevents re\-import of memories unless the number of segments has been updated\.
+.
+.P
+\fBTMXSUITE\fR list function calls up the list of memories and allows you to sort by various criteria such as date_imported and name and a tag
+.
+.P
+\fBTMXSUITE\fR export takes a JSON file of segments and memory information such as source language and Y and Z and creates a TMX compliant memory containing those segments, by writing to an existing empty TMX file template\.
+.
+.P
+Make sure the TMX templates work for Trados, MemoQ and Across? May need separate templates and a flag for each\.
+.
+.P
+Useful for creating lists of queries\. Add a JSON writer feature later\.
+.
+.P
+How can we use cron to do a daily import?
+.
+.SH "OPTIONS"
+.
+.SH "EXAMPLES"
+Import a directory \- globals as per defaults
+.
+.IP "" 4
+.
+.nf
+
+$ tmxsuite import "mymemories" \-m MECHENG,DOCU
+.
+.fi
+.
+.IP "" 0
+.
+.P
+To create this docu
+.
+.IP "" 4
+.
+.nf
+
+ $ ronn man/tmxsuite\.1\.ronn
+.
+.fi
+.
+.IP "" 0
+.
+.P
+To read the man page!
+.
+.IP "" 4
+.
+.nf
+
+ $ ronn man/tmxsuite\.1\.ronn
+.
+.fi
+.
+.IP "" 0
+

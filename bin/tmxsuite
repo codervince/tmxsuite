@@ -1,0 +1,121 @@
+#!/usr/bin/env ruby
+require 'gli'
+begin # XXX: Remove this begin/rescue before distributing your app
+require 'tmxsuite'
+rescue LoadError
+  STDERR.puts "In development, you need to use `bundle exec bin/tmxsuite` to run your app"
+  STDERR.puts "At install-time, RubyGems will make sure lib, etc. are in the load path"
+  STDERR.puts "Feel free to remove this message from bin/tmxsuite now"
+  exit 64
+end
+
+include GLI::App
+
+program_desc 'A simple program for importing TMX files into database friendly formats and exporting segments again'
+version Tmxsuite::VERSION
+
+
+##GLOBAL FLAGS - also external configuration file
+
+
+    desc 'Specify the file where the memorylist lives'
+    arg_name 'path'
+    default_value File.join(ENV['HOME'],'.memories.yml')
+    flag [:m,:memorylist]
+
+    desc 'Specify the directory where the exported memories live'
+    arg_name 'path'
+    default_value File.join(ENV['HOME'],'EXPORT')
+    flag [:e,:export]
+
+##END
+
+desc 'Imports a new memory or directory of memories'
+long_desc """
+  A memory must be TMX compliant. Version?
+  You can import a directory or a list of directories
+  Subdirectories will be ignored
+  It makes sense to arrange memories by tags since tags can only be added per import
+
+"""
+
+arg_name 'memories'
+command :import do |c|
+
+      desc 'Choose x for xpath, otherwise going to use SAX'
+      c.switch [:X,:xpath]
+
+      c.desc 'The memories or directory of memory to import'
+      c.flag :f
+
+      c.flag 'tags', :arg_name => 'tags',
+                     :type => Array, 
+                     :desc => 'The domain-style tags for this memory/memories'
+
+
+      c.action do |global_options,options,args|
+
+        # Your command logic here
+         
+        # If you have any errors, just raise them
+        # raise "that command made no sense"
+        puts options.inspect
+        puts "import command ran"
+      end
+end
+
+desc 'Exports a JSON style segment block to a new TMX, adds to memory list'
+arg_name 'Describe arguments to export here'
+command :export do |c|
+
+      c.desc 'The YAML file to export'
+      c.flag :f
+
+
+  c.action do |global_options,options,args|
+    puts options.inspect
+    puts "export command ran"
+  end
+end
+
+desc 'Lists the memories you have imported previously'
+arg_name 'Describe arguments to list here'
+command :list do |c|
+
+  c.flag :s
+
+  c.action do |global_options,options,args|
+    puts global_options.inspect
+
+    puts "list command ran"
+
+    #sorting
+    if options[:s] == 'date'
+       #sort list by date         
+    end  
+
+  end
+end
+
+pre do |global,command,options,args|
+  # Pre logic here
+  # Return true to proceed; false to abort and not call the
+  # chosen command
+  # Use skips_pre before a command to skip this block
+  # on that command only
+  true
+end
+
+post do |global,command,options,args|
+  # Post logic here
+  # Use skips_post before a command to skip this
+  # block on that command only
+end
+
+on_error do |exception|
+  # Error logic here
+  # return false to skip default error handling
+  true
+end
+
+exit run(ARGV)
