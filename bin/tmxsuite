@@ -16,29 +16,37 @@ version Tmxsuite::VERSION
 
 
 ##GLOBAL FLAGS - also external configuration file
+  
+    MEMLIST = File.join(Dir.pwd,'.memories.txt')
+
+    
+    desc 'Specify the directory where the tmxtemplates live'
+    arg_name 'tmxpath'
+    default_value File.join(File.expand_path File.dirname(__FILE__),'/TEMPLATES')
+    flag [:t,:templates]
 
 
     desc 'Specify the file where the memorylist lives'
-    arg_name 'path'
-    default_value File.join(ENV['HOME'],'.memories.yml')
+    arg_name 'memlist'
+    default_value MEMLIST
     flag [:m,:memorylist]
 
     desc 'Specify the directory where the exported memories live'
-    arg_name 'path'
-    default_value File.join(ENV['HOME'],'EXPORT')
+    arg_name 'exportpath'
+    default_value File.join(File.expand_path File.dirname(__FILE__),'/EXPORT')
     flag [:e,:export]
 
 ##END
 
 desc 'Imports a new memory or directory of memories'
 long_desc """
-  A memory must be TMX compliant. Version?
-  You can import a directory or a list of directories
+  A memory must be TMX compliant.
+  The memory or memories are parsed and the segments are turned into the specified format
   Subdirectories will be ignored
+  E.g. Creates a JSON file memoryname.json.
   It makes sense to arrange memories by tags since tags can only be added per import
 
 """
-
 arg_name 'memories'
 command :import do |c|
 
@@ -52,30 +60,73 @@ command :import do |c|
                      :type => Array, 
                      :desc => 'The domain-style tags for this memory/memories'
 
+      c.desc 'The format to turn the TMX into'
+      c.arg_name 'json|csv|pretty|yaml|database'
+      c.default_value 'json'
+      c.flag :format
 
-      c.action do |global_options,options,args|
+      c.action do |global_options,options,memory_names|
 
-        # Your command logic here
-         
-        # If you have any errors, just raise them
-        # raise "that command made no sense"
-        puts options.inspect
-        puts "import command ran"
+        # allow for memories to be added from standard input stream
+           
+      
+
+            File.open(global_options[:memorylist], 'a+') do |memorylist|
+
+                if memory_names.empty?
+                   puts "Reading new memories from stdin...."
+                   memory_names = STDIN.readlines.map { |a| a.chomp }
+                end
+                
+                memories = 0
+                
+                memory_names.each do |mem|
+                    memorylist.puts [mem, Time.now].join(':::')
+                    memories +=1
+                end
+                
+                if memories ==0
+                  raise "You must provide memories on the command line or via standard input"
+                end 
+            end
+
+
+              #debug
+              case options[:format]
+              
+              when 'json'
+                  puts 'json'  
+              when 'csv'
+                  puts 'csv'
+              end
+              puts options.inspect
+              puts "import command ran"
       end
+
+      
+      
+
+      #   # Your command logic here
+         
+      #   # If you have any errors, just raise them
+      #   # raise "that command made no sense"
+      #   puts options.inspect
+      #   puts "import command ran"
+      # end
 end
 
 desc 'Exports a JSON style segment block to a new TMX, adds to memory list'
 arg_name 'Describe arguments to export here'
 command :export do |c|
 
-      c.desc 'The YAML file to export'
+      c.desc 'The format of the input file'
       c.flag :f
 
+       c.action do |global_options,options,args|
 
-  c.action do |global_options,options,args|
-    puts options.inspect
-    puts "export command ran"
-  end
+        puts options.inspect
+        puts "export command ran"
+      end
 end
 
 desc 'Lists the memories you have imported previously'
@@ -97,12 +148,18 @@ command :list do |c|
   end
 end
 
-pre do |global,command,options,args|
+pre do |global_options,command,options,args|
   # Pre logic here
   # Return true to proceed; false to abort and not call the
   # chosen command
   # Use skips_pre before a command to skip this block
   # on that command only
+
+  #does file exist? if not create it
+  unless File.exists? global_options[:memorylist]
+        global_options[:memorylist] = File.new(MEMLIST, 'w')
+        warn "Created new memories file #{MEMLIST}"
+  end
   true
 end
 
