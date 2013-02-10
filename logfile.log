@@ -1,0 +1,161 @@
+# Logfile created on 2013-02-10 17:11:21 +0700 by logger.rb/31641
+I, [2013-02-10T17:11:21.305700 #37902]  INFO -- : document started at 2013-02-10 17:11:21 +0700
+I, [2013-02-10T17:11:21.311955 #37902]  INFO -- : document ended and took 0.006239 secs to process
+I, [2013-02-10T17:11:21.312009 #37902]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:11:21.312037 #37902]  INFO -- : 99
+I, [2013-02-10T17:11:21.312068 #37902]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:12:58.449309 #37914]  INFO -- : document started at 2013-02-10 17:12:58 +0700
+I, [2013-02-10T17:12:58.454834 #37914]  INFO -- : document ended and took 0.005514 secs to process
+I, [2013-02-10T17:12:58.454874 #37914]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:12:58.454900 #37914]  INFO -- : 99
+I, [2013-02-10T17:12:58.454934 #37914]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:12:58.455064 #37914]  INFO -- : document started at 2013-02-10 17:12:58 +0700
+I, [2013-02-10T17:13:08.590872 #37914]  INFO -- : document ended and took 10.135789 secs to process
+I, [2013-02-10T17:13:08.590966 #37914]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T17:13:08.590994 #37914]  INFO -- : 75852
+I, [2013-02-10T17:13:08.591025 #37914]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T17:14:02.619330 #37923]  INFO -- : document started at 2013-02-10 17:14:02 +0700
+I, [2013-02-10T17:14:02.624754 #37923]  INFO -- : document ended and took 0.005414 secs to process
+I, [2013-02-10T17:14:02.624793 #37923]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:14:02.624818 #37923]  INFO -- : 99
+I, [2013-02-10T17:14:02.624846 #37923]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:14:17.483222 #37925]  INFO -- : document started at 2013-02-10 17:14:17 +0700
+I, [2013-02-10T17:14:17.488583 #37925]  INFO -- : document ended and took 0.00535 secs to process
+I, [2013-02-10T17:14:17.488623 #37925]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:14:17.488649 #37925]  INFO -- : 99
+I, [2013-02-10T17:14:17.488678 #37925]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:16:41.492355 #37946]  INFO -- : document started at 2013-02-10 17:16:41 +0700
+I, [2013-02-10T17:16:41.497880 #37946]  INFO -- : document ended and took 0.005514 secs to process
+I, [2013-02-10T17:16:41.497919 #37946]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:16:41.497945 #37946]  INFO -- : 99
+I, [2013-02-10T17:16:41.497980 #37946]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:16:41.498268 #37946]  INFO -- : document started at 2013-02-10 17:16:41 +0700
+I, [2013-02-10T17:16:51.709660 #37946]  INFO -- : document ended and took 10.211385 secs to process
+I, [2013-02-10T17:16:51.709754 #37946]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T17:16:51.709783 #37946]  INFO -- : 75852
+I, [2013-02-10T17:16:51.709815 #37946]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T17:20:32.492301 #37975]  INFO -- : document started at 2013-02-10 17:20:32 +0700
+I, [2013-02-10T17:20:32.497665 #37975]  INFO -- : document ended and took 0.005353 secs to process
+I, [2013-02-10T17:20:32.497704 #37975]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:20:32.497730 #37975]  INFO -- : 99
+I, [2013-02-10T17:20:32.497759 #37975]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:20:40.851691 #37977]  INFO -- : document started at 2013-02-10 17:20:40 +0700
+I, [2013-02-10T17:20:40.857047 #37977]  INFO -- : document ended and took 0.005345 secs to process
+I, [2013-02-10T17:20:40.857088 #37977]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:20:40.857114 #37977]  INFO -- : 99
+I, [2013-02-10T17:20:40.857149 #37977]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:20:40.857261 #37977]  INFO -- : document started at 2013-02-10 17:20:40 +0700
+I, [2013-02-10T17:20:51.303350 #37977]  INFO -- : document ended and took 10.446052 secs to process
+I, [2013-02-10T17:20:51.303527 #37977]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T17:20:51.303558 #37977]  INFO -- : 75852
+I, [2013-02-10T17:20:51.303591 #37977]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T17:22:58.252778 #37994]  INFO -- : document started at 2013-02-10 17:22:58 +0700
+I, [2013-02-10T17:22:58.258081 #37994]  INFO -- : document ended and took 0.005293 secs to process
+I, [2013-02-10T17:22:58.258119 #37994]  INFO -- : document has source lang -  DE
+I, [2013-02-10T17:22:58.258144 #37994]  INFO -- : 99
+I, [2013-02-10T17:22:58.258172 #37994]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T17:22:58.258324 #37994]  INFO -- : document started at 2013-02-10 17:22:58 +0700
+I, [2013-02-10T17:23:08.855267 #37994]  INFO -- : document ended and took 10.596922 secs to process
+I, [2013-02-10T17:23:08.855355 #37994]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T17:23:08.855383 #37994]  INFO -- : 75852
+I, [2013-02-10T17:23:08.855415 #37994]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T19:03:42.104729 #38814]  INFO -- : document started at 2013-02-10 19:03:42 +0700
+I, [2013-02-10T19:03:42.110842 #38814]  INFO -- : document ended and took 0.006103 secs to process
+I, [2013-02-10T19:03:42.110897 #38814]  INFO -- : document has source lang -  DE
+I, [2013-02-10T19:03:42.110922 #38814]  INFO -- : 99
+I, [2013-02-10T19:03:42.110949 #38814]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T19:04:43.253019 #38822]  INFO -- : document started at 2013-02-10 19:04:43 +0700
+I, [2013-02-10T19:04:43.259194 #38822]  INFO -- : document ended and took 0.006164 secs to process
+I, [2013-02-10T19:04:43.259246 #38822]  INFO -- : document has source lang -  DE
+I, [2013-02-10T19:04:43.259271 #38822]  INFO -- : 99
+I, [2013-02-10T19:04:43.259302 #38822]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T19:04:43.260569 #38822]  INFO -- : document started at 2013-02-10 19:04:43 +0700
+I, [2013-02-10T19:04:53.516388 #38822]  INFO -- : document ended and took 10.255802 secs to process
+I, [2013-02-10T19:04:53.516478 #38822]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T19:04:53.516506 #38822]  INFO -- : 75852
+I, [2013-02-10T19:04:53.516536 #38822]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T19:36:37.493322 #39086]  INFO -- : document started at 2013-02-10 19:36:37 +0700
+I, [2013-02-10T19:36:37.499298 #39086]  INFO -- : document ended and took 0.005964 secs to process
+I, [2013-02-10T19:36:37.499336 #39086]  INFO -- : document has source lang -  DE
+I, [2013-02-10T19:36:37.499379 #39086]  INFO -- : 99
+I, [2013-02-10T19:36:37.499411 #39086]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T19:36:37.500020 #39086]  INFO -- : document started at 2013-02-10 19:36:37 +0700
+I, [2013-02-10T19:36:47.847233 #39086]  INFO -- : document ended and took 10.347196 secs to process
+I, [2013-02-10T19:36:47.847330 #39086]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T19:36:47.847360 #39086]  INFO -- : 75852
+I, [2013-02-10T19:36:47.847394 #39086]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T20:01:29.854928 #39279]  INFO -- : document started at 2013-02-10 20:01:29 +0700
+I, [2013-02-10T20:01:29.861133 #39279]  INFO -- : document ended and took 0.006191 secs to process
+I, [2013-02-10T20:01:29.861175 #39279]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:01:29.861200 #39279]  INFO -- : 99
+I, [2013-02-10T20:01:29.861229 #39279]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:01:48.756386 #39283]  INFO -- : document started at 2013-02-10 20:01:48 +0700
+I, [2013-02-10T20:01:48.762534 #39283]  INFO -- : document ended and took 0.006135 secs to process
+I, [2013-02-10T20:01:48.762579 #39283]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:01:48.762606 #39283]  INFO -- : 99
+I, [2013-02-10T20:01:48.762637 #39283]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:02:08.799718 #39286]  INFO -- : document started at 2013-02-10 20:02:08 +0700
+I, [2013-02-10T20:02:08.805766 #39286]  INFO -- : document ended and took 0.006031 secs to process
+I, [2013-02-10T20:02:08.805810 #39286]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:02:08.805835 #39286]  INFO -- : 99
+I, [2013-02-10T20:02:08.805863 #39286]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:02:14.359105 #39288]  INFO -- : document started at 2013-02-10 20:02:14 +0700
+I, [2013-02-10T20:02:14.365374 #39288]  INFO -- : document ended and took 0.006255 secs to process
+I, [2013-02-10T20:02:14.365420 #39288]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:02:14.365447 #39288]  INFO -- : 99
+I, [2013-02-10T20:02:14.365478 #39288]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:03:43.211066 #39304]  INFO -- : document started at 2013-02-10 20:03:43 +0700
+I, [2013-02-10T20:03:43.217441 #39304]  INFO -- : document ended and took 0.006363 secs to process
+I, [2013-02-10T20:03:43.217490 #39304]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:03:43.217516 #39304]  INFO -- : 99
+I, [2013-02-10T20:03:43.217567 #39304]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:04:58.531382 #39313]  INFO -- : document started at 2013-02-10 20:04:58 +0700
+I, [2013-02-10T20:04:58.537513 #39313]  INFO -- : document ended and took 0.006121 secs to process
+I, [2013-02-10T20:04:58.537553 #39313]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:04:58.537585 #39313]  INFO -- : 99
+I, [2013-02-10T20:04:58.537614 #39313]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:04:58.538218 #39313]  INFO -- : document started at 2013-02-10 20:04:58 +0700
+I, [2013-02-10T20:05:08.928425 #39313]  INFO -- : document ended and took 10.390188 secs to process
+I, [2013-02-10T20:05:08.928520 #39313]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T20:05:08.928548 #39313]  INFO -- : 75852
+I, [2013-02-10T20:05:08.928580 #39313]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T20:17:52.646224 #39416]  INFO -- : document started at 2013-02-10 20:17:52 +0700
+I, [2013-02-10T20:17:52.652482 #39416]  INFO -- : document ended and took 0.006235 secs to process
+I, [2013-02-10T20:17:52.652537 #39416]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:17:52.652571 #39416]  INFO -- : 99
+I, [2013-02-10T20:17:52.652603 #39416]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:18:43.135254 #39423]  INFO -- : document started at 2013-02-10 20:18:43 +0700
+I, [2013-02-10T20:18:43.141211 #39423]  INFO -- : document ended and took 0.005947 secs to process
+I, [2013-02-10T20:18:43.141250 #39423]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:18:43.141275 #39423]  INFO -- : 99
+I, [2013-02-10T20:18:43.141303 #39423]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:19:26.046411 #39428]  INFO -- : document started at 2013-02-10 20:19:26 +0700
+I, [2013-02-10T20:19:26.052871 #39428]  INFO -- : document ended and took 0.006448 secs to process
+I, [2013-02-10T20:19:26.052915 #39428]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:19:26.052939 #39428]  INFO -- : 99
+I, [2013-02-10T20:19:26.052967 #39428]  INFO -- : DE - Ein Beobachter im Tal sieht nur eine Wolke.
+I, [2013-02-10T20:19:26.053964 #39428]  INFO -- : document started at 2013-02-10 20:19:26 +0700
+I, [2013-02-10T20:19:36.370636 #39428]  INFO -- : document ended and took 10.316651 secs to process
+I, [2013-02-10T20:19:36.370730 #39428]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T20:19:36.370759 #39428]  INFO -- : 75852
+I, [2013-02-10T20:19:36.370790 #39428]  INFO -- : de-DE - Überblick über das CMS im Allgemeinen:
+I, [2013-02-10T20:31:00.493126 #39527]  INFO -- : document started at 2013-02-10 20:31:00 +0700
+I, [2013-02-10T20:31:00.508922 #39527]  INFO -- : document ended and took 0.015784 secs to process
+I, [2013-02-10T20:31:00.509010 #39527]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:31:00.509038 #39527]  INFO -- : 99
+I, [2013-02-10T20:31:18.266074 #39530]  INFO -- : document started at 2013-02-10 20:31:18 +0700
+I, [2013-02-10T20:31:18.271726 #39530]  INFO -- : document ended and took 0.005636 secs to process
+I, [2013-02-10T20:31:18.271778 #39530]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:31:18.271804 #39530]  INFO -- : 99
+I, [2013-02-10T20:31:33.889763 #39533]  INFO -- : document started at 2013-02-10 20:31:33 +0700
+I, [2013-02-10T20:31:33.896058 #39533]  INFO -- : document ended and took 0.006282 secs to process
+I, [2013-02-10T20:31:33.896117 #39533]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:31:33.896144 #39533]  INFO -- : 99
+I, [2013-02-10T20:33:05.428479 #39549]  INFO -- : document started at 2013-02-10 20:33:05 +0700
+I, [2013-02-10T20:33:05.434068 #39549]  INFO -- : document ended and took 0.005579 secs to process
+I, [2013-02-10T20:33:05.434106 #39549]  INFO -- : document has source lang -  DE
+I, [2013-02-10T20:33:05.434132 #39549]  INFO -- : 99
+I, [2013-02-10T20:33:05.435012 #39549]  INFO -- : document started at 2013-02-10 20:33:05 +0700
+I, [2013-02-10T20:33:16.257864 #39549]  INFO -- : document ended and took 10.822831 secs to process
+I, [2013-02-10T20:33:16.257958 #39549]  INFO -- : document has source lang -  de-DE
+I, [2013-02-10T20:33:16.257988 #39549]  INFO -- : 75852

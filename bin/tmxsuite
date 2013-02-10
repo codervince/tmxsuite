@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 require 'gli'
+require_relative 'parser'
+
 begin # XXX: Remove this begin/rescue before distributing your app
 require 'tmxsuite'
 rescue LoadError
@@ -10,9 +12,16 @@ rescue LoadError
 end
 
 include GLI::App
+include Parser
+
 
 program_desc 'A simple program for importing TMX files into database friendly formats and exporting segments again'
 version Tmxsuite::VERSION
+
+
+# accept(Dokument::TMX) do |string|
+#   Dokument::TMX.new(string)
+# end
 
 
 ##GLOBAL FLAGS - also external configuration file
@@ -53,54 +62,73 @@ command :import do |c|
       desc 'Choose x for xpath, otherwise going to use SAX'
       c.switch [:X,:xpath]
 
-      c.desc 'The memories or directory of memory to import'
-      c.flag :f
+      # c.desc 'The directory of memory to import'
+      # c.flag [:d, :directory]
 
-      c.flag 'tags', :arg_name => 'tags',
+
+
+      c.flag :t, :arg_name => 'tags',
                      :type => Array, 
-                     :desc => 'The domain-style tags for this memory/memories'
+                     :desc => 'The domain-style tags for these memories'
 
       c.desc 'The format to turn the TMX into'
-      c.arg_name 'json|csv|pretty|yaml|database'
+      c.arg_name 'json|csv|pretty|yaml|db'
       c.default_value 'json'
       c.flag :format
 
-      c.action do |global_options,options,memory_names|
+      c.action do |global_options,options,memory_paths|
 
-        # allow for memories to be added from standard input stream
-           
-      
+              ## memory_paths are the args to ARGV an array
+                     
+              # allow for memories to be added from standard input stream
 
-            File.open(global_options[:memorylist], 'a+') do |memorylist|
-
-                if memory_names.empty?
-                   puts "Reading new memories from stdin...."
-                   memory_names = STDIN.readlines.map { |a| a.chomp }
+                if memory_paths.empty?
+                    puts "Reading new memories from stdin...."
+                    memory_paths = STDIN.readlines.map { |a| a.chomp }
                 end
+                 
+                # puts "START"  
+                # puts memory_paths
+                # puts "END"
+
+                # TMX Sanity check  
+                memory_paths.each do |m|
+                  memory_paths.delete(m) if File.extname(m) != ".tmx"
+                end
+
+                # puts "START2"  
+                # puts memory_paths
+                # puts "END2"
+
+
+                # memory_paths.delete_if {|x| File.extname(x) == ".tmx"   } 
                 
+                File.open(global_options[:memorylist], 'a+') do |memorylist|
+
                 memories = 0
-                
-                memory_names.each do |mem|
-                    memorylist.puts [mem, Time.now].join(':::')
-                    memories +=1
+                memory_paths.each do |mem|
+
+               
+                            ##CHECK AGAIN FOR VALIDITY AFTER IMPORT
+                            #if these are real memories, add to list - bring in Document module
+                            memorylist.puts [mem, Time.now].join(':::')
+                            memories +=1
                 end
-                
+
                 if memories ==0
-                  raise "You must provide memories on the command line or via standard input"
+                  raise "Invalid memories on the command line or via standard input"
                 end 
+                options[:memorycount] = memories
+                options[:files] = memory_paths
             end
 
 
-              #debug
-              case options[:format]
-              
-              when 'json'
-                  puts 'json'  
-              when 'csv'
-                  puts 'csv'
-              end
+       
               puts options.inspect
               puts "import command ran"
+
+              puts "Running Parser with options hash- "
+              Parser::TMXMultiParser.new(options)
       end
 
       
@@ -147,6 +175,9 @@ command :list do |c|
 
   end
 end
+
+
+### DO THE DIRECTORY TMX CHECK HERE
 
 pre do |global_options,command,options,args|
   # Pre logic here

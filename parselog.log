@@ -1,0 +1,95 @@
+# Logfile created on 2013-02-10 16:26:00 +0700 by logger.rb/31641
+I, [2013-02-10T16:26:00.724411 #37533]  INFO -- : Starting parsing at 2013-02-10 16:26:00 +0700
+I, [2013-02-10T16:31:45.232121 #37585]  INFO -- : Starting parsing at 2013-02-10 16:31:45 +0700
+I, [2013-02-10T16:43:22.152646 #37677]  INFO -- : Starting parsing at 2013-02-10 16:43:22 +0700
+I, [2013-02-10T16:44:31.246160 #37688]  INFO -- : Starting parsing at 2013-02-10 16:44:31 +0700
+I, [2013-02-10T16:49:53.696990 #37727]  INFO -- : Starting parsing at 2013-02-10 16:49:53 +0700
+I, [2013-02-10T16:50:39.610283 #37736]  INFO -- : Starting parsing at 2013-02-10 16:50:39 +0700
+I, [2013-02-10T16:51:02.100045 #37739]  INFO -- : Starting parsing at 2013-02-10 16:51:02 +0700
+I, [2013-02-10T16:51:02.102476 #37739]  INFO -- : Parsing using SAX
+I, [2013-02-10T16:55:24.366652 #37777]  INFO -- : Starting parsing
+I, [2013-02-10T16:55:24.366757 #37777]  INFO -- : Parsing using SAX
+I, [2013-02-10T17:04:04.053228 #37843]  INFO -- : Starting parsing
+I, [2013-02-10T17:04:04.053330 #37843]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:10:09.582466 #37891]  INFO -- : Starting parsing
+I, [2013-02-10T17:10:09.582561 #37891]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:10:24.752351 #37894]  INFO -- : Starting parsing
+I, [2013-02-10T17:10:24.752453 #37894]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:11:21.305267 #37902]  INFO -- : Starting parsing
+I, [2013-02-10T17:11:21.305369 #37902]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:12:58.449006 #37914]  INFO -- : Starting parsing
+I, [2013-02-10T17:12:58.449109 #37914]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:14:02.619053 #37923]  INFO -- : Starting parsing
+I, [2013-02-10T17:14:02.619154 #37923]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:14:17.482908 #37925]  INFO -- : Starting parsing
+I, [2013-02-10T17:14:17.483012 #37925]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:16:41.492068 #37946]  INFO -- : Starting parsing
+I, [2013-02-10T17:16:41.492167 #37946]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:20:32.492013 #37975]  INFO -- : Starting parsing
+I, [2013-02-10T17:20:32.492114 #37975]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:20:40.851396 #37977]  INFO -- : Starting parsing
+I, [2013-02-10T17:20:40.851490 #37977]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:22:58.252487 #37994]  INFO -- : Starting parsing
+I, [2013-02-10T17:22:58.252589 #37994]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:22:58.258204 #37994]  INFO -- : nil
+I, [2013-02-10T17:23:08.855442 #37994]  INFO -- : nil
+I, [2013-02-10T17:30:03.507204 #38052]  INFO -- : Starting parsing
+I, [2013-02-10T17:30:03.507297 #38052]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:30:38.119921 #38059]  INFO -- : Starting parsing
+I, [2013-02-10T17:30:38.120021 #38059]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:33:29.067701 #38081]  INFO -- : Starting parsing
+I, [2013-02-10T17:33:29.067803 #38081]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:33:47.188483 #38085]  INFO -- : Starting parsing
+I, [2013-02-10T17:33:47.188750 #38085]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T17:34:24.220291 #38090]  INFO -- : Starting parsing
+I, [2013-02-10T17:34:24.220399 #38090]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:01:07.097070 #38789]  INFO -- : Starting parsing
+I, [2013-02-10T19:01:07.097178 #38789]  INFO -- : Parsing using SAX into ormat, 2 memories
+I, [2013-02-10T19:02:44.609066 #38806]  INFO -- : Starting parsing
+I, [2013-02-10T19:02:44.609168 #38806]  INFO -- : Parsing using SAX into ormat, 2 memories
+I, [2013-02-10T19:03:42.104347 #38814]  INFO -- : Starting parsing
+I, [2013-02-10T19:03:42.104480 #38814]  INFO -- : Parsing using SAX into yaml, 2 memories
+I, [2013-02-10T19:04:43.252701 #38822]  INFO -- : Starting parsing
+I, [2013-02-10T19:04:43.252810 #38822]  INFO -- : Parsing using SAX into yaml, 2 memories
+I, [2013-02-10T19:13:25.573676 #38892]  INFO -- : Starting parsing
+I, [2013-02-10T19:13:25.573790 #38892]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:15:21.114466 #38911]  INFO -- : Starting parsing
+I, [2013-02-10T19:15:21.114565 #38911]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:27:49.725972 #39013]  INFO -- : Starting parsing
+I, [2013-02-10T19:27:49.726070 #39013]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:28:40.100289 #39020]  INFO -- : Starting parsing
+I, [2013-02-10T19:28:40.100421 #39020]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:29:59.936120 #39030]  INFO -- : Starting parsing
+I, [2013-02-10T19:29:59.936214 #39030]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:35:09.819725 #39075]  INFO -- : Starting parsing
+I, [2013-02-10T19:35:09.819825 #39075]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T19:36:37.493019 #39086]  INFO -- : Starting parsing
+I, [2013-02-10T19:36:37.493114 #39086]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:00:21.837956 #39270]  INFO -- : Starting parsing
+I, [2013-02-10T20:00:21.838055 #39270]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:01:29.854631 #39279]  INFO -- : Starting parsing
+I, [2013-02-10T20:01:29.854732 #39279]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:01:48.756082 #39283]  INFO -- : Starting parsing
+I, [2013-02-10T20:01:48.756190 #39283]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:02:08.799362 #39286]  INFO -- : Starting parsing
+I, [2013-02-10T20:02:08.799464 #39286]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:02:14.358807 #39288]  INFO -- : Starting parsing
+I, [2013-02-10T20:02:14.358908 #39288]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:03:43.210757 #39304]  INFO -- : Starting parsing
+I, [2013-02-10T20:03:43.210858 #39304]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:04:58.531066 #39313]  INFO -- : Starting parsing
+I, [2013-02-10T20:04:58.531161 #39313]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:17:52.645923 #39416]  INFO -- : Starting parsing
+I, [2013-02-10T20:17:52.646026 #39416]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:18:43.134954 #39423]  INFO -- : Starting parsing
+I, [2013-02-10T20:18:43.135047 #39423]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:19:26.046053 #39428]  INFO -- : Starting parsing
+I, [2013-02-10T20:19:26.046189 #39428]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:31:00.475939 #39527]  INFO -- : Starting parsing
+I, [2013-02-10T20:31:00.492600 #39527]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:31:18.265787 #39530]  INFO -- : Starting parsing
+I, [2013-02-10T20:31:18.265888 #39530]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:31:33.889437 #39533]  INFO -- : Starting parsing
+I, [2013-02-10T20:31:33.889538 #39533]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-10T20:33:05.428194 #39549]  INFO -- : Starting parsing
+I, [2013-02-10T20:33:05.428290 #39549]  INFO -- : Parsing using SAX into json, 2 memories
