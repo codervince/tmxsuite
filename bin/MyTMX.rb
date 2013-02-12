@@ -58,8 +58,10 @@ class MyTMX < Nokogiri::XML::SAX::Document
 		elsif name == "tuv"
 			@lang =  Hash[attrs]['xml:lang']		
 		elsif name == "seg"
-			@isseg = true	
+			@isseg = true
 		end
+		# Reset/initialize @characters
+		@characters = ""	
 	end
 	
 	# ***********************************************************************
@@ -75,23 +77,26 @@ class MyTMX < Nokogiri::XML::SAX::Document
 	# ***********************************************************************
 	# Override Nokogiri::XML::SAX::Document::characters event method.
 	# @param string The character read from the parser.
+	# Gets called multiple times....only create object when called last time
+
 	def characters(string)
+		@characters += string
 		if @isseg and !string.empty?
-			if $DEBUG
-				@log.info string
-				@log.info @counter
-				@log.info @lang
-				@log.info string
-			end
-			TU.new(@counter, @lang, string)
+			# if $DEBUG
+			# 	@log.info string
+			# 	@log.info @counter
+			# 	@log.info @lang
+			# 	@log.info string
+			# # end
+			# TU.new(@counter, @lang, @characters)
 			if @fileinfo[:sourcelang] == @lang
-				#create new TU
-				@thisseg = TU.new(@counter, @lang, string)
+				#create new TU but only 
+				@thisseg = TU.new(@counter, @lang, @characters)
 				@content[@counter.to_s] = @thisseg
 			else  
 				#thisseg exists 
 				@thisseg = @content[@counter.to_s]
-				@thisseg.setTarget(@lang, string)
+				@thisseg.setTarget(@lang, @characters)
 				@content[@counter.to_s] = @thisseg
 			end	 				
 		end	

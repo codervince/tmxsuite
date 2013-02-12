@@ -64,6 +64,7 @@ module Parser
               	when 'json'
                 	#output file and wring to
                 	 out = "#{f}.json"
+                	 @log.info "Creating JSON file #{out}"
 					File.open(out, 'w') { |file| file.write(serializer.toJSON()) } 
                 when 'yaml'  
                 	out = "#{f}+1231+.yaml" 

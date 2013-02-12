@@ -24,6 +24,12 @@ version Tmxsuite::VERSION
 # end
 
 
+##DEFAULTS & OPTIONS
+
+# defaults = YAML.load_file(file)
+# config_file File.join(File.expand_path(File.dirname(__FILE__)),'.tmxsuite.rc.yaml')
+
+
 ##GLOBAL FLAGS - also external configuration file
   
     MEMLIST = File.join(Dir.pwd,'.memories.txt')
@@ -73,7 +79,7 @@ command :import do |c|
 
       c.desc 'The format to turn the TMX into'
       c.arg_name 'json|csv|pretty|yaml|db'
-      c.default_value 'json'
+      # c.default_value defaults[:format]
       c.flag :format
 
       c.action do |global_options,options,memory_paths|
