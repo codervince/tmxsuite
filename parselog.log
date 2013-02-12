@@ -10,3 +10,65 @@ I, [2013-02-12T08:26:16.145986 #957]  INFO -- : Creating JSON file /Users/vincev
 I, [2013-02-12T08:26:52.425613 #962]  INFO -- : Starting parsing
 I, [2013-02-12T08:26:52.425746 #962]  INFO -- : Parsing using SAX into json, 1 memories
 I, [2013-02-12T08:26:52.432622 #962]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:03:52.059606 #1897]  INFO -- : Starting parsing
+I, [2013-02-12T10:03:52.059722 #1897]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:03:52.067039 #1897]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:04:55.407997 #1905]  INFO -- : Starting parsing
+I, [2013-02-12T10:04:55.408121 #1905]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:04:55.415537 #1905]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:05:34.419188 #1911]  INFO -- : Starting parsing
+I, [2013-02-12T10:05:34.419339 #1911]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:05:34.426896 #1911]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:07:25.354546 #1930]  INFO -- : Starting parsing
+I, [2013-02-12T10:07:25.354640 #1930]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:07:25.361874 #1930]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:10:22.332035 #1953]  INFO -- : Starting parsing
+I, [2013-02-12T10:10:22.332129 #1953]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:10:22.339644 #1953]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:10:47.650042 #1956]  INFO -- : Starting parsing
+I, [2013-02-12T10:10:47.650135 #1956]  INFO -- : Parsing using SAX into json--tags, 1 memories
+I, [2013-02-12T10:11:06.542900 #1960]  INFO -- : Starting parsing
+I, [2013-02-12T10:11:06.542996 #1960]  INFO -- : Parsing using SAX into json--tags=MECHENG,DOKU,ELECENG, 1 memories
+I, [2013-02-12T10:11:33.611337 #1964]  INFO -- : Starting parsing
+I, [2013-02-12T10:11:33.611428 #1964]  INFO -- : Parsing using SAX into json-t=MECHENG,DOKU,ELECENG, 1 memories
+I, [2013-02-12T10:11:44.558701 #1966]  INFO -- : Starting parsing
+I, [2013-02-12T10:11:44.558798 #1966]  INFO -- : Parsing using SAX into json-t, 1 memories
+I, [2013-02-12T10:12:17.777377 #1976]  INFO -- : Starting parsing
+I, [2013-02-12T10:12:17.777469 #1976]  INFO -- : Parsing using SAX into json-t, 1 memories
+I, [2013-02-12T10:13:21.398129 #1985]  INFO -- : Starting parsing
+I, [2013-02-12T10:13:21.398222 #1985]  INFO -- : Parsing using SAX into json--tags, 1 memories
+I, [2013-02-12T10:13:33.887863 #1987]  INFO -- : Starting parsing
+I, [2013-02-12T10:13:33.887965 #1987]  INFO -- : Parsing using SAX into json--tags, 1 memories
+I, [2013-02-12T10:13:50.430376 #1990]  INFO -- : Starting parsing
+I, [2013-02-12T10:13:50.430469 #1990]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:13:50.437836 #1990]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:14:15.178398 #1994]  INFO -- : Starting parsing
+I, [2013-02-12T10:14:15.178495 #1994]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:14:15.185873 #1994]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:16:04.293106 #2007]  INFO -- : Starting parsing
+I, [2013-02-12T10:16:04.293219 #2007]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:16:04.300074 #2007]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:16:52.877396 #2014]  INFO -- : Starting parsing
+I, [2013-02-12T10:16:52.877493 #2014]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:16:52.884554 #2014]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:17:12.067575 #2018]  INFO -- : Starting parsing
+I, [2013-02-12T10:17:12.067689 #2018]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:17:12.074646 #2018]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:17:27.743172 #2020]  INFO -- : Starting parsing
+I, [2013-02-12T10:17:27.743280 #2020]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:17:27.750140 #2020]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:17:42.705747 #2025]  INFO -- : Starting parsing
+I, [2013-02-12T10:17:42.705857 #2025]  INFO -- : Parsing using SAX into json, 1 memories
+I, [2013-02-12T10:17:42.712823 #2025]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:18:43.312866 #2037]  INFO -- : Starting parsing
+I, [2013-02-12T10:18:43.312957 #2037]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-12T10:18:43.319996 #2037]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:18:43.682235 #2037]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/4metarack.tmx.json
+I, [2013-02-12T10:22:30.606026 #2064]  INFO -- : Starting parsing
+I, [2013-02-12T10:22:30.606118 #2064]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-12T10:22:30.613132 #2064]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:22:30.940159 #2064]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/4metarack.tmx.json
+I, [2013-02-12T10:23:40.833968 #2073]  INFO -- : Starting parsing
+I, [2013-02-12T10:23:40.834061 #2073]  INFO -- : Parsing using SAX into json, 2 memories
+I, [2013-02-12T10:23:40.840996 #2073]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/5nebel.tmx.json
+I, [2013-02-12T10:23:41.171203 #2073]  INFO -- : Creating JSON file /Users/vincevincent/rails/tmximport/tmxsuite/INPUT/4metarack.tmx.json

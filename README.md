@@ -21,6 +21,9 @@ _import files using SAX include some tags_
 
 tmxsuite.rb import --tags MECHENG, DOCU -f "mem1.tmx" -f "mem2.tmx"
 
+_use initconfig to configure the GLOBAL configuration options (see below)
+
+tmxsuite --tmxtemplates 'PATH/TO/TMXTEMPLATES'--username='me' initconfig
 
 
 ## DESCRIPTION

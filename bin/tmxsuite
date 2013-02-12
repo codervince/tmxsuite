@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 require 'gli'
+require 'yaml'
 require_relative 'parser'
+
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
 
 begin # XXX: Remove this begin/rescue before distributing your app
 require 'tmxsuite'
@@ -25,31 +28,36 @@ version Tmxsuite::VERSION
 
 
 ##DEFAULTS & OPTIONS
-
-# defaults = YAML.load_file(file)
-# config_file File.join(File.expand_path(File.dirname(__FILE__)),'.tmxsuite.rc.yaml')
+# config_file File.join(ENV['PWD'],'/lib/.todo.rc.yaml')
 
 
-##GLOBAL FLAGS - also external configuration file
-  
-    MEMLIST = File.join(Dir.pwd,'.memories.txt')
 
+
+##GLOBAL OPTIONS - also external configuration file
+    #automatically created with initconfig  
+    config_file File.join(File.expand_path(File.dirname(__FILE__)),'.tmxsuite.rc.yaml')
+    mem_file = File.join(File.expand_path(File.dirname(__FILE__)),'.memories.yaml')
     
     desc 'Specify the directory where the tmxtemplates live'
-    arg_name 'tmxpath'
+    arg_name 'tmxtemplates'
     default_value File.join(File.expand_path File.dirname(__FILE__),'/TEMPLATES')
-    flag [:t,:templates]
-
+    flag [:tmxtemplates]
 
     desc 'Specify the file where the memorylist lives'
     arg_name 'memlist'
-    default_value MEMLIST
-    flag [:m,:memorylist]
+    default_value mem_file
+    flag [:memorylist]
 
     desc 'Specify the directory where the exported memories live'
     arg_name 'exportpath'
     default_value File.join(File.expand_path File.dirname(__FILE__),'/EXPORT')
-    flag [:e,:export]
+    flag [:exportpath]
+
+    desc 'Enter a default user name'
+    arg_name 'user'
+    default_value ENV['USER']
+    flag [:username]
+
 
 ##END
 
@@ -73,7 +81,7 @@ command :import do |c|
 
 
 
-      c.flag :t, :arg_name => 'tags',
+      c.flag [:t,:tags], :arg_name => 'tags',
                      :type => Array, 
                      :desc => 'The domain-style tags for these memories'
 
@@ -117,7 +125,19 @@ command :import do |c|
                
                             ##CHECK AGAIN FOR VALIDITY AFTER IMPORT
                             #if these are real memories, add to list - bring in Document module
-                            memorylist.puts [mem, Time.now].join(':::')
+                             
+                            #memname, mempath, createdon, createdby     
+                            meminfo = {
+                              :memoryname => File.basename(mem),
+                              :imported => Time.now.strftime("%F at %T"),
+                              :previouswrite => File.mtime(mem).strftime("%F at %T"),
+                              :previousread => File.atime(mem).strftime("%F at %T"),
+                              :owner => global_options[:username],
+                              :tags => options[:tags]
+                            }
+           
+                            YAML::dump(meminfo, memorylist)
+                            warn "added memories to memory list #{global_options[:memorylist]}"
                             memories +=1
                 end
 
@@ -128,12 +148,10 @@ command :import do |c|
                 options[:files] = memory_paths
             end
 
-
        
               puts options.inspect
-              puts "import command ran"
-
-              puts "Running Parser with options hash- "
+              puts "Running import command...."
+              puts "Running Parser...."
               Parser::TMXMultiParser.new(options)
       end
 
@@ -194,8 +212,8 @@ pre do |global_options,command,options,args|
 
   #does file exist? if not create it
   unless File.exists? global_options[:memorylist]
-        global_options[:memorylist] = File.new(MEMLIST, 'w')
-        warn "Created new memories file #{MEMLIST}"
+        global_options[:memorylist] = File.open(mem_file, 'w')
+        warn "Created new memories file #{mem_file}"
   end
   true
 end

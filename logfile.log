@@ -175,3 +175,103 @@ I, [2013-02-12T08:26:52.425958 #962]  INFO -- : document started at 2013-02-12 0
 I, [2013-02-12T08:26:52.432520 #962]  INFO -- : document ended and took 0.006551 secs to process
 I, [2013-02-12T08:26:52.432566 #962]  INFO -- : document has source lang -  DE
 I, [2013-02-12T08:26:52.432590 #962]  INFO -- : 99
+I, [2013-02-12T10:03:52.059953 #1897]  INFO -- : document started at 2013-02-12 10:03:52 +0700
+I, [2013-02-12T10:03:52.066902 #1897]  INFO -- : document ended and took 0.006932 secs to process
+I, [2013-02-12T10:03:52.066972 #1897]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:03:52.066998 #1897]  INFO -- : 99
+I, [2013-02-12T10:04:55.408360 #1905]  INFO -- : document started at 2013-02-12 10:04:55 +0700
+I, [2013-02-12T10:04:55.415406 #1905]  INFO -- : document ended and took 0.007028 secs to process
+I, [2013-02-12T10:04:55.415471 #1905]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:04:55.415499 #1905]  INFO -- : 99
+I, [2013-02-12T10:05:34.419537 #1911]  INFO -- : document started at 2013-02-12 10:05:34 +0700
+I, [2013-02-12T10:05:34.426755 #1911]  INFO -- : document ended and took 0.007198 secs to process
+I, [2013-02-12T10:05:34.426828 #1911]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:05:34.426856 #1911]  INFO -- : 99
+I, [2013-02-12T10:07:25.354834 #1930]  INFO -- : document started at 2013-02-12 10:07:25 +0700
+I, [2013-02-12T10:07:25.361763 #1930]  INFO -- : document ended and took 0.006914 secs to process
+I, [2013-02-12T10:07:25.361811 #1930]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:07:25.361838 #1930]  INFO -- : 99
+I, [2013-02-12T10:10:22.332325 #1953]  INFO -- : document started at 2013-02-12 10:10:22 +0700
+I, [2013-02-12T10:10:22.339502 #1953]  INFO -- : document ended and took 0.007155 secs to process
+I, [2013-02-12T10:10:22.339572 #1953]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:10:22.339599 #1953]  INFO -- : 99
+I, [2013-02-12T10:10:47.650330 #1956]  INFO -- : document started at 2013-02-12 10:10:47 +0700
+I, [2013-02-12T10:10:47.657330 #1956]  INFO -- : document ended and took 0.006984 secs to process
+I, [2013-02-12T10:10:47.657396 #1956]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:10:47.657424 #1956]  INFO -- : 99
+I, [2013-02-12T10:11:06.543194 #1960]  INFO -- : document started at 2013-02-12 10:11:06 +0700
+I, [2013-02-12T10:11:06.550234 #1960]  INFO -- : document ended and took 0.007028 secs to process
+I, [2013-02-12T10:11:06.550280 #1960]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:11:06.550308 #1960]  INFO -- : 99
+I, [2013-02-12T10:11:33.611620 #1964]  INFO -- : document started at 2013-02-12 10:11:33 +0700
+I, [2013-02-12T10:11:33.618376 #1964]  INFO -- : document ended and took 0.006739 secs to process
+I, [2013-02-12T10:11:33.618434 #1964]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:11:33.618459 #1964]  INFO -- : 99
+I, [2013-02-12T10:11:44.559004 #1966]  INFO -- : document started at 2013-02-12 10:11:44 +0700
+I, [2013-02-12T10:11:44.566016 #1966]  INFO -- : document ended and took 0.006994 secs to process
+I, [2013-02-12T10:11:44.566082 #1966]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:11:44.566110 #1966]  INFO -- : 99
+I, [2013-02-12T10:12:17.777665 #1976]  INFO -- : document started at 2013-02-12 10:12:17 +0700
+I, [2013-02-12T10:12:17.784624 #1976]  INFO -- : document ended and took 0.006943 secs to process
+I, [2013-02-12T10:12:17.784679 #1976]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:12:17.784706 #1976]  INFO -- : 99
+I, [2013-02-12T10:13:21.398424 #1985]  INFO -- : document started at 2013-02-12 10:13:21 +0700
+I, [2013-02-12T10:13:21.405388 #1985]  INFO -- : document ended and took 0.006945 secs to process
+I, [2013-02-12T10:13:21.405448 #1985]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:13:21.405475 #1985]  INFO -- : 99
+I, [2013-02-12T10:13:33.888162 #1987]  INFO -- : document started at 2013-02-12 10:13:33 +0700
+I, [2013-02-12T10:13:33.895266 #1987]  INFO -- : document ended and took 0.007087 secs to process
+I, [2013-02-12T10:13:33.895321 #1987]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:13:33.895349 #1987]  INFO -- : 99
+I, [2013-02-12T10:13:50.430665 #1990]  INFO -- : document started at 2013-02-12 10:13:50 +0700
+I, [2013-02-12T10:13:50.437699 #1990]  INFO -- : document ended and took 0.007013 secs to process
+I, [2013-02-12T10:13:50.437769 #1990]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:13:50.437798 #1990]  INFO -- : 99
+I, [2013-02-12T10:14:15.178697 #1994]  INFO -- : document started at 2013-02-12 10:14:15 +0700
+I, [2013-02-12T10:14:15.185733 #1994]  INFO -- : document ended and took 0.007015 secs to process
+I, [2013-02-12T10:14:15.185800 #1994]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:14:15.185828 #1994]  INFO -- : 99
+I, [2013-02-12T10:16:04.293426 #2007]  INFO -- : document started at 2013-02-12 10:16:04 +0700
+I, [2013-02-12T10:16:04.299958 #2007]  INFO -- : document ended and took 0.006518 secs to process
+I, [2013-02-12T10:16:04.300002 #2007]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:16:04.300041 #2007]  INFO -- : 99
+I, [2013-02-12T10:16:52.877686 #2014]  INFO -- : document started at 2013-02-12 10:16:52 +0700
+I, [2013-02-12T10:16:52.884440 #2014]  INFO -- : document ended and took 0.006739 secs to process
+I, [2013-02-12T10:16:52.884487 #2014]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:16:52.884514 #2014]  INFO -- : 99
+I, [2013-02-12T10:17:12.067877 #2018]  INFO -- : document started at 2013-02-12 10:17:12 +0700
+I, [2013-02-12T10:17:12.074521 #2018]  INFO -- : document ended and took 0.006631 secs to process
+I, [2013-02-12T10:17:12.074567 #2018]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:17:12.074606 #2018]  INFO -- : 99
+I, [2013-02-12T10:17:27.743472 #2020]  INFO -- : document started at 2013-02-12 10:17:27 +0700
+I, [2013-02-12T10:17:27.750040 #2020]  INFO -- : document ended and took 0.006556 secs to process
+I, [2013-02-12T10:17:27.750082 #2020]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:17:27.750108 #2020]  INFO -- : 99
+I, [2013-02-12T10:17:42.706061 #2025]  INFO -- : document started at 2013-02-12 10:17:42 +0700
+I, [2013-02-12T10:17:42.712724 #2025]  INFO -- : document ended and took 0.006651 secs to process
+I, [2013-02-12T10:17:42.712767 #2025]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:17:42.712792 #2025]  INFO -- : 99
+I, [2013-02-12T10:18:43.313138 #2037]  INFO -- : document started at 2013-02-12 10:18:43 +0700
+I, [2013-02-12T10:18:43.319887 #2037]  INFO -- : document ended and took 0.006737 secs to process
+I, [2013-02-12T10:18:43.319937 #2037]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:18:43.319962 #2037]  INFO -- : 99
+I, [2013-02-12T10:18:43.350971 #2037]  INFO -- : document started at 2013-02-12 10:18:43 +0700
+I, [2013-02-12T10:18:43.682072 #2037]  INFO -- : document ended and took 0.331122 secs to process
+I, [2013-02-12T10:18:43.682169 #2037]  INFO -- : document has source lang -  DE-DE
+I, [2013-02-12T10:18:43.682200 #2037]  INFO -- : 3684
+I, [2013-02-12T10:22:30.606305 #2064]  INFO -- : document started at 2013-02-12 10:22:30 +0700
+I, [2013-02-12T10:22:30.613013 #2064]  INFO -- : document ended and took 0.006695 secs to process
+I, [2013-02-12T10:22:30.613060 #2064]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:22:30.613096 #2064]  INFO -- : 99
+I, [2013-02-12T10:22:30.614298 #2064]  INFO -- : document started at 2013-02-12 10:22:30 +0700
+I, [2013-02-12T10:22:30.940012 #2064]  INFO -- : document ended and took 0.325704 secs to process
+I, [2013-02-12T10:22:30.940101 #2064]  INFO -- : document has source lang -  DE-DE
+I, [2013-02-12T10:22:30.940128 #2064]  INFO -- : 3684
+I, [2013-02-12T10:23:40.834258 #2073]  INFO -- : document started at 2013-02-12 10:23:40 +0700
+I, [2013-02-12T10:23:40.840890 #2073]  INFO -- : document ended and took 0.006622 secs to process
+I, [2013-02-12T10:23:40.840933 #2073]  INFO -- : document has source lang -  DE
+I, [2013-02-12T10:23:40.840958 #2073]  INFO -- : 99
+I, [2013-02-12T10:23:40.842005 #2073]  INFO -- : document started at 2013-02-12 10:23:40 +0700
+I, [2013-02-12T10:23:41.171061 #2073]  INFO -- : document ended and took 0.329047 secs to process
+I, [2013-02-12T10:23:41.171141 #2073]  INFO -- : document has source lang -  DE-DE
+I, [2013-02-12T10:23:41.171170 #2073]  INFO -- : 3684

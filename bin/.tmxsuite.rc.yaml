@@ -1,0 +1,13 @@
+---
+user: vincevincent
+:user: vincevincent
+:tmxtemplates: /TEMPLATES/bin
+:memorylist: /Users/vincevincent/rails/tmximport/tmxsuite/bin/lib/.memories.yaml
+:exportpath: /EXPORT/bin
+:version: false
+:help: false
+commands:
+  :_doc: {}
+  :import: {}
+  :export: {}
+  :list: {}

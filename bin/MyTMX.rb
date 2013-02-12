@@ -88,7 +88,7 @@ class MyTMX < Nokogiri::XML::SAX::Document
 			# 	@log.info @lang
 			# 	@log.info string
 			# # end
-			# TU.new(@counter, @lang, @characters)
+			
 			if @fileinfo[:sourcelang] == @lang
 				#create new TU but only 
 				@thisseg = TU.new(@counter, @lang, @characters)
