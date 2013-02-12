@@ -129,6 +129,7 @@ command :import do |c|
                             #memname, mempath, createdon, createdby     
                             meminfo = {
                               :memoryname => File.basename(mem),
+                              :size => '%.2f' % ((File.size(mem).to_f)/1024000) + " MB",
                               :imported => Time.now.strftime("%F at %T"),
                               :previouswrite => File.mtime(mem).strftime("%F at %T"),
                               :previousread => File.atime(mem).strftime("%F at %T"),
