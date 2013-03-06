@@ -1,0 +1,234 @@
+#!/usr/bin/env ruby
+require 'gli'
+require 'yaml'
+require_relative 'parser'
+
+$LOAD_PATH << File.expand_path(File.dirname(__FILE__) + '/../lib')
+
+begin # XXX: Remove this begin/rescue before distributing your app
+require 'tmxsuite'
+rescue LoadError
+  STDERR.puts "In development, you need to use `bundle exec bin/tmxsuite` to run your app"
+  STDERR.puts "At install-time, RubyGems will make sure lib, etc. are in the load path"
+  STDERR.puts "Feel free to remove this message from bin/tmxsuite now"
+  exit 64
+end
+
+include GLI::App
+include Parser
+
+
+program_desc 'A simple program for importing TMX files into database friendly formats and exporting segments again'
+version Tmxsuite::VERSION
+
+
+# accept(Dokument::TMX) do |string|
+#   Dokument::TMX.new(string)
+# end
+
+
+##DEFAULTS & OPTIONS
+# config_file File.join(ENV['PWD'],'/lib/.todo.rc.yaml')
+
+
+
+
+##GLOBAL OPTIONS - also external configuration file
+    #automatically created with initconfig  
+    config_file File.join(File.expand_path(File.dirname(__FILE__)),'.tmxsuite.rc.yaml')
+    mem_file = File.join(File.expand_path(File.dirname(__FILE__)),'.memories.yaml')
+    
+    desc 'Specify the directory where the tmxtemplates live'
+    arg_name 'tmxtemplates'
+    default_value File.join(File.expand_path File.dirname(__FILE__),'/TEMPLATES')
+    flag [:tmxtemplates]
+
+    desc 'Specify the file where the memorylist lives'
+    arg_name 'memlist'
+    default_value mem_file
+    flag [:memorylist]
+
+    desc 'Specify the directory where the exported memories live'
+    arg_name 'exportpath'
+    default_value File.join(File.expand_path File.dirname(__FILE__),'/EXPORT')
+    flag [:exportpath]
+
+    desc 'Enter a default user name'
+    arg_name 'user'
+    default_value ENV['USER']
+    flag [:username]
+
+
+##END
+
+desc 'Imports a new memory or directory of memories'
+long_desc """
+  A memory must be TMX compliant.
+  The memory or memories are parsed and the segments are turned into the specified format
+  Subdirectories will be ignored
+  E.g. Creates a JSON file memoryname.json.
+  It makes sense to arrange memories by tags since tags can only be added per import
+
+"""
+arg_name 'memories'
+command :import do |c|
+
+      desc 'Choose x for xpath, otherwise going to use SAX'
+      c.switch [:X,:xpath]
+
+      # c.desc 'The directory of memory to import'
+      # c.flag [:d, :directory]
+
+
+
+      c.flag [:t,:tags], :arg_name => 'tags',
+                     :type => Array, 
+                     :desc => 'The domain-style tags for these memories'
+
+      c.desc 'The format to turn the TMX into'
+      c.arg_name 'json|csv|pretty|yaml|db'
+      # c.default_value defaults[:format]
+      c.flag :format
+
+      c.action do |global_options,options,memory_paths|
+
+              ## memory_paths are the args to ARGV an array
+                     
+              # allow for memories to be added from standard input stream
+
+                if memory_paths.empty?
+                    puts "Reading new memories from stdin...."
+                    memory_paths = STDIN.readlines.map { |a| a.chomp }
+                end
+                 
+                # puts "START"  
+                # puts memory_paths
+                # puts "END"
+
+                # TMX Sanity check  
+                memory_paths.each do |m|
+                  memory_paths.delete(m) if File.extname(m) != ".tmx"
+                end
+
+                # puts "START2"  
+                # puts memory_paths
+                # puts "END2"
+
+
+                # memory_paths.delete_if {|x| File.extname(x) == ".tmx"   } 
+                
+                File.open(global_options[:memorylist], 'a+') do |memorylist|
+
+                memories = 0
+                memory_paths.each do |mem|
+
+               
+                            ##CHECK AGAIN FOR VALIDITY AFTER IMPORT
+                            #if these are real memories, add to list - bring in Document module
+                             
+                            #memname, mempath, createdon, createdby     
+                            meminfo = {
+                              :memoryname => File.basename(mem),
+                              :size => '%.2f' % ((File.size(mem).to_f)/1024000) + " MB",
+                              :imported => Time.now.strftime("%F at %T"),
+                              :previouswrite => File.mtime(mem).strftime("%F at %T"),
+                              :previousread => File.atime(mem).strftime("%F at %T"),
+                              :owner => global_options[:username],
+                              :tags => options[:tags]
+                            }
+           
+                            YAML::dump(meminfo, memorylist)
+                            warn "added memories to memory list #{global_options[:memorylist]}"
+                            memories +=1
+                end
+
+                if memories ==0
+                  raise "Invalid memories on the command line or via standard input"
+                end 
+                options[:memorycount] = memories
+                options[:files] = memory_paths
+            end
+
+       
+              puts options.inspect
+              puts "Running import command...."
+              puts "Running Parser...."
+              Parser::TMXMultiParser.new(options)
+      end
+
+      
+      
+
+      #   # Your command logic here
+         
+      #   # If you have any errors, just raise them
+      #   # raise "that command made no sense"
+      #   puts options.inspect
+      #   puts "import command ran"
+      # end
+end
+
+desc 'Exports a JSON style segment block to a new TMX, adds to memory list'
+arg_name 'Describe arguments to export here'
+command :export do |c|
+
+      c.desc 'The format of the input file'
+      c.flag :f
+
+       c.action do |global_options,options,args|
+
+        puts options.inspect
+        puts "export command ran"
+      end
+end
+
+desc 'Lists the memories you have imported previously'
+arg_name 'Describe arguments to list here'
+command :list do |c|
+
+  c.flag :s
+
+  c.action do |global_options,options,args|
+    puts global_options.inspect
+
+    puts "list command ran"
+
+    #sorting
+    if options[:s] == 'date'
+       #sort list by date         
+    end  
+
+  end
+end
+
+
+### DO THE DIRECTORY TMX CHECK HERE
+
+pre do |global_options,command,options,args|
+  # Pre logic here
+  # Return true to proceed; false to abort and not call the
+  # chosen command
+  # Use skips_pre before a command to skip this block
+  # on that command only
+
+  #does file exist? if not create it
+  unless File.exists? global_options[:memorylist]
+        global_options[:memorylist] = File.open(mem_file, 'w')
+        warn "Created new memories file #{mem_file}"
+  end
+  true
+end
+
+post do |global,command,options,args|
+  # Post logic here
+  # Use skips_post before a command to skip this
+  # block on that command only
+end
+
+on_error do |exception|
+  # Error logic here
+  # return false to skip default error handling
+  true
+end
+
+exit run(ARGV)

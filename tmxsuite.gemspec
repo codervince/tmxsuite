@@ -3,11 +3,11 @@ require File.join([File.dirname(__FILE__),'lib','tmxsuite','version.rb'])
 spec = Gem::Specification.new do |s| 
   s.name = 'tmxsuite'
   s.version = Tmxsuite::VERSION
-  s.author = 'Your Name Here'
-  s.email = 'your@email.address.com'
-  s.homepage = 'http://your.website.com'
+  s.author = 'Coder Vince'
+  s.email = 'publicvince102@gmail.com'
+  s.homepage = 'http://www.termz.net'
   s.platform = Gem::Platform::RUBY
-  s.summary = 'A description of your project'
+  s.summary = 'A gem for processing Localization/Translation .TMX files into frontend and backend friendly formats'
 # Add your other files here if you make them
   s.files = %w(
 bin/tmxsuite
